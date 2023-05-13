@@ -4,10 +4,10 @@ class Krr < Formula
   
     if OS.mac?
       url "https://github.com/robusta-dev/krr/releases/download/v1.0.0-rc0/krr-mac.tar.gz"
-      sha256 "add_your_mac_sha256_here"
+      sha256 "4df4206c1e51d86d0ca99f2b1b2b51aa80e175118e44ed20be58eeafeadad571"
     elsif OS.linux?
       url "https://github.com/robusta-dev/krr/releases/download/v1.0.0-rc0/krr-linux.tar.gz"
-      sha256 "add_your_linux_sha256_here"
+      sha256 "todo"
     end
   
     def install
@@ -15,7 +15,7 @@ class Krr < Formula
     end
   
     test do
-      system "#{bin}/krr", "--version"
+      system "#{bin}/krr", "version"
     end
   end
   
