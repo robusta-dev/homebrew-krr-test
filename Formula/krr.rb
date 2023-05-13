@@ -11,11 +11,12 @@ class Krr < Formula
     end
   
     def install
-      bin.install "krr"
+        libexec.install Dir["*"]
+        bin.write_exec_script (libexec/"krr")
     end
-  
+    
     test do
-      system "#{bin}/krr", "version"
+        system "#{bin}/krr", "--version"
     end
-  end
+end
   
