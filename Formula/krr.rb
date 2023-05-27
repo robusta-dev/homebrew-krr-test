@@ -3,10 +3,10 @@ class Krr < Formula
     homepage "https://github.com/robusta-dev/krr"
 
     if OS.mac?
-        url "https://github.com/robusta-dev/krr/releases/download//krr-macos-latest-.zip"
+        url "https://github.com/robusta-dev/krr/releases/download/test-release-build-13/krr-macos-latest-test-release-build-13.zip"
         sha256 ""
     elsif OS.linux?
-        url "https://github.com/robusta-dev/krr/releases/download//krr-linux-latest-.zip"
+        url "https://github.com/robusta-dev/krr/releases/download/test-release-build-13/krr-linux-latest-test-release-build-13.zip"
         sha256 ""
     end
 
